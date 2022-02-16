@@ -1,0 +1,27 @@
+.background {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(/Assets/1627078466_15-kartinkin-com-p-kontsertnii-zal-art-art-krasivo-15.jpg);
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.notes {
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  background: #EEE8AA;
+  width: 8em;
+  height: 8em;
+  border:5px solid yellowgreen;
+}
+
+.notes:hover{
+background-color: #BDB76B;
+font-size: x-large;
+border:8px solid yellow;
+}
