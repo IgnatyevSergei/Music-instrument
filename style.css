@@ -13,15 +13,17 @@
 .notes {
   font-family: "Arimo", sans-serif;
   font-weight: 700;
-  font-size: larger;
-  background: #EEE8AA;
+  background: #eee8aa;
   width: 8em;
   height: 8em;
-  border:5px solid yellowgreen;
+  border: 5px solid yellowgreen;
 }
 
-.notes:hover{
-background-color: #BDB76B;
-font-size: x-large;
-border:8px solid yellow;
+.notes:hover {
+  background-color: #bdb76b;
+  border: 8px solid yellow;
+}
+
+.transform {
+  transform: scale(1.5);
 }
