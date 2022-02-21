@@ -10,7 +10,7 @@ const playSound = (e) => {
 };
 
 const removeTransition = (e) => {
-  // if (e.propertyName !== "transform") return;
+  if (e.propertyName !== "transform") return;
 
   console.log(e);
 
@@ -20,6 +20,7 @@ const removeTransition = (e) => {
 const keys = document.querySelectorAll(".notes");
 
 keys.forEach((el) =>
-  el.addEventListener("webkitTransitionEnd", () => console.log("privet"))
+  el.addEventListener("transitionend", removeTransition)
 );
+
 window.addEventListener("keydown", playSound);
