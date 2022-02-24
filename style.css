@@ -1,7 +1,7 @@
 .background {
   width: 1920px;
   height: 1080px;
-  background-image: url(/Assets/1627078466_15-kartinkin-com-p-kontsertnii-zal-art-art-krasivo-15.jpg);
+  background-image: url(./Assets/1627078466_15-kartinkin-com-p-kontsertnii-zal-art-art-krasivo-15.jpg);
   box-sizing: border-box;
 }
 .wrapper {

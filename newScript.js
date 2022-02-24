@@ -12,22 +12,19 @@ const playSound = (e) => {
 const removeTransition = (e) => {
   if (e.propertyName !== "transform") return;
 
-  
   e.target.classList.remove("play");
 };
 
 const keys = document.querySelectorAll(".notes");
 
-keys.forEach((el) =>
-  el.addEventListener("transitionend", removeTransition)
-);
+keys.forEach((el) => el.addEventListener("transitionend", removeTransition));
 
 window.addEventListener("keydown", playSound);
 
-
-const playClickSound = (e) =>{
-
-  const audio = document.querySelector(`audio[data-key="${e.target.getAttribute("data-key")}"]`);
+const playClickSound = (e) => {
+  const audio = document.querySelector(
+    `audio[data-key="${e.target.getAttribute("data-key")}"]`
+  );
 
   if (!audio) return;
   e.target.classList.add("play");
