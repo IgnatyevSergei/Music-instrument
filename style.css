@@ -1,7 +1,7 @@
 .background {
   width: 1920px;
   height: 1080px;
-  background-image: url(/Assets/1627078466_15-kartinkin-com-p-kontsertnii-zal-art-art-krasivo-15.jpg);
+  background-image: url(./Assets/1627078466_15-kartinkin-com-p-kontsertnii-zal-art-art-krasivo-15.jpg);
   box-sizing: border-box;
 }
 .wrapper {
@@ -13,15 +13,18 @@
 .notes {
   font-family: "Arimo", sans-serif;
   font-weight: 700;
-  font-size: larger;
-  background: #EEE8AA;
+  background: #eee8aa;
   width: 8em;
   height: 8em;
-  border:5px solid yellowgreen;
+  border: 5px solid yellowgreen;
 }
 
-.notes:hover{
-background-color: #BDB76B;
-font-size: x-large;
-border:8px solid yellow;
+.notes:hover {
+  background-color: #bdb76b;
+  border: 8px solid yellow;
+}
+
+.play {
+  transform: scale(1.2);
+  transition: transform 0.2s ease; 
 }

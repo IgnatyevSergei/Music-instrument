@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,14 +16,25 @@
   <body>
     <div class="background">
       <div class="wrapper">
-        <button class="notes">До</button>
-        <button class="notes">Ре</button>
-        <button class="notes">Ми</button>
-        <button class="notes">Фа</button>
-        <button class="notes">Соль</button>
-        <button class="notes">Ля</button>
-        <button class="notes">Си</button>
+        <button class="notes" data-key="65">
+          До <br /><br />
+          A
+        </button>
+        <button class="notes" data-key="83">Ре <br /><br />S</button>
+        <button class="notes" data-key="68">Ми <br /><br />D</button>
+        <button class="notes" data-key="70">Фа <br /><br />F</button>
+        <button class="notes" data-key="71">Соль <br /><br />G</button>
+        <button class="notes" data-key="72">Ля <br /><br />H</button>
+        <button class="notes" data-key="74">Си <br /><br />J</button>
       </div>
     </div>
+    <audio src="/Assets/sounds/nota-do.mp3" data-key="65"></audio>
+    <audio src="/Assets/sounds/re.mp3" data-key="83"></audio>
+    <audio src="/Assets/sounds/mi.mp3" data-key="68"></audio>
+    <audio src="/Assets/sounds/nota-fa.mp3" data-key="70"></audio>
+    <audio src="/Assets/sounds/sol.mp3" data-key="71"></audio>
+    <audio src="/Assets/sounds/lja.mp3" data-key="72"></audio>
+    <audio src="/Assets/sounds/si.mp3" data-key="74"></audio>
+    <script src="/newScript.js"></script>
   </body>
 </html>
